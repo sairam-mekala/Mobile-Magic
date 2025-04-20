@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const genAI = new GoogleGenerativeAI("YOUR API KEY"); 
+const genAI = new GoogleGenerativeAI("YOUR_API_KEY"); 
 
 app.post("/prompt", async (req, res) => {
   const { prompt, projectId } = req.body;
